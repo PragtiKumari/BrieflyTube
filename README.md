@@ -1,7 +1,9 @@
 📽️ BrieflyTube — Summarize & Chat with YouTube Videos
 BrieflyTube is an AI-powered web app that allows users to summarize YouTube videos, view key timestamps, and even ask custom questions — all without watching the full video. Just paste the link and let the magic happen. ✨
 
+
 🌟 Built using Google's Gemini API (Free Tier) and Streamlit.
+
 
 🌟 Features
 - Paste any YouTube video link
@@ -12,36 +14,54 @@ BrieflyTube is an AI-powered web app that allows users to summarize YouTube vide
 - Download summary or answer as .txt
 - clean UI
 
+
 🌟 Demo
-(Add a GIF or screenshot here showing the workflow — from pasting a link to getting a summary)
-Optional: host the app on Streamlit Cloud and add a demo link!
+Click here-- https://youtu.be/1qokPaqbDYE
+host the app on Streamlit Cloud!
+
+**Imp**-- YouTube blocks transcript requests from cloud platforms like Streamlit due to shared IPs.
+To avoid broken features and still show everything smoothly, I’ve shared a video demo instead — no limits, no errors, just the full experience! 
+
 
 🌟 Tech Stack
-Python	Core backend logic
-Streamlit	Frontend + app interface
-Google Gemini API	AI-powered summarization and Q&A
-youtube-transcript-api	Extract video transcript
+| Technology                 | Purpose                                                         |
+| -------------------------- | --------------------------------------------------------------- |
+| **Python**                 | Core programming language for building backend logic            |
+| **Streamlit**              | Frontend web interface to interact with the app                 |
+| **Google Gemini API**      | Used for summarizing videos and answering questions with Gen AI |
+| **youtube-transcript-api** | Fetches transcript from YouTube video URLs                      |
+| **PyDotEnv**               | Loads API keys securely from `.env` file                        |
+| **Git & GitHub**           | Version control and project hosting                             |
+| **VS Code**                | Primary code editor for development                             |
+| **PowerShell**             | Terminal used for running and testing the app                   |
+
 
 🌟 Installation
-git clone https://github.com/PragtiKumari/BrieflyTube.git
-cd BrieflyTube
-python -m venv venv
-venv\Scripts\activate        # For Windows
-pip install -r requirements.txt
+| Step | Command / Action                                                                  | Description                                        |
+| ---- | --------------------------------------------------------------------------------- | -------------------------------------------------- |
+| 1️⃣  | `git clone https://github.com/PragtiKumari/BrieflyTube.git`                       | Clone the project repository to your local machine |
+| 2️⃣  | `cd BrieflyTube`                                                                  | Move into the project directory                    |
+| 3️⃣  | `python -m venv venv`                                                             | Create a virtual environment named `venv`          |
+| 4️⃣  | **Windows:** `venv\Scripts\activate`<br>**Mac/Linux:** `source venv/bin/activate` | Activate the virtual environment based on your OS  |
+| 5️⃣  | `pip install -r requirements.txt`                                                 | Install all required Python dependencies           |
+
 
 🌟 Run the App
 streamlit run app.py
 The app will open in your browser at http://localhost:8501
 
+
 🌟 Project Structure
-BrieflyTube/                      
-├── app.py                    # Main Streamlit app
-├── gemini_client.py          # Gemini model listing / debugging
-├── list_models.py            # Script to list available Gemini models
-├── prompts.py                # Contains custom prompt templates
-├── requirements.txt          # Python package dependencies
-├── summarizer.py             # Logic to generate summary, timestamps, and answers
-└── transcript_fetcher.py     # Fetches YouTube transcript
+| File / Folder           | Description                                                           |
+| ----------------------- | --------------------------------------------------------------------- |
+| `app.py`                |  Main Streamlit app that handles UI and user flow                   |
+| `gemini_client.py`      |  Script for Gemini model listing and debugging                      |
+| `list_models.py`        |  Lists available Gemini models for testing availability             |
+| `prompts.py`            |  Custom-designed prompt templates for summary, timestamps, and Q\&A |
+| `requirements.txt`      |  All required Python packages and versions                          |
+| `summarizer.py`         |  Core logic to generate summaries, timestamps, and answer questions |
+| `transcript_fetcher.py` |  Fetches transcript from YouTube using `youtube-transcript-api`     |
+| `__pycache__/`          |  Auto-generated folder with Python bytecode (can be ignored)        |
 
 
 🌟 License
@@ -50,6 +70,7 @@ This project is licensed under the MIT License.
 - **Made with ❤️ by Pragati Kumari**
 - **Contributions are welcome**
 - **Star the repo if you found it useful!**
+
 
 🌟 Future Ideas
 - Add voice summarization
