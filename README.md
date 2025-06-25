@@ -53,9 +53,6 @@ This project is licensed under the MIT License.
 
 🌟 Future Ideas
 - Add voice summarization
-
 - Support multiple languages
-
 - Add support for video without subtitles (via Whisper)
-
 - Mobile-friendly UI
