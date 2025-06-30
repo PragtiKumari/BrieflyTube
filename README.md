@@ -46,10 +46,6 @@ To avoid broken features and still show everything smoothly, I’ve shared a vid
 | 5️⃣  | `pip install -r requirements.txt`                                                 | Install all required Python dependencies           |
 
 
-🌟 Run the App
-streamlit run app.py
-The app will open in your browser at http://localhost:8501
-
 
 🌟 Project Structure
 | File / Folder           | Description                                                           |
